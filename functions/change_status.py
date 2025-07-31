@@ -5,4 +5,6 @@ def change_status(list, j_tasks):
         j_tasks[list[1]]["status"] = "in-progress"
     else:
         j_tasks[list[1]]["status"] = "done"
+    
+    print("Task status change successfull")
     return j_tasks

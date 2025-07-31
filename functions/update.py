@@ -5,5 +5,5 @@ def update_task (list, j_tasks):
     does_task_exist(id, j_tasks)
     j_tasks[id]["description"] = description
     j_tasks[id]["updateAt"] = ctime()
-    
+    print("Task successfully updated")
     return j_tasks
