@@ -12,18 +12,24 @@ def main():
     j_tasks = read_file_to_json(path)
     match(args[0]):
         case "add":
-            write_json_file(path, add_task(args[1], j_tasks))
+            if len(args) < 2:
+                raise ValueError("Wrong amount of commands was passed")
+            write_json_file(path, add_task(args, j_tasks))
         case "update":
-            write_json_file(path, update_task((args[1]), args[2], j_tasks))
+            if len(args) < 3:
+                raise ValueError("Wrong amount of commands was passed")
+            write_json_file(path, update_task(args, j_tasks))
         case "delete":
-            pass
-        case "mark-in-progress":
-            pass
-        case "mark-in-done":
-            pass
+            if len(args) < 2:
+                raise ValueError("Wrong amount of commands was passed")
+            write_json_file(path, delete_task(args, j_tasks))
+        case "mark-in-progress" | "mark-in-done":
+            if len(args) < 2:
+                raise ValueError("Wrong amount of commands was passed")
+            write_json_file(path, change_status(args, j_tasks))
         case "list":
             pass
         case _:
-            raise ValueError("Worng command argument passed")
+            raise ValueError("Wrong command argument passed")
 
 main()
