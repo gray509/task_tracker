@@ -48,9 +48,9 @@ Note: Tasks are saved automatically in a JSON file.
 
 ## Features to add
 delete function
-    confirm with the user if they want to delete
-    delete multiple tasks at once based on ID, status
+- confirm with the user if they want to delete
+- delete multiple tasks at once based on ID, status
 
 list functions
-    list with ID
-    list based on date
+- list with ID
+- list based on date
