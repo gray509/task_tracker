@@ -1,5 +1,5 @@
 # Task Tracker
-Task Tracker is a simple command-line tool built with Python that helps you manage your tasks efficiently. You can add, update, delete, and list tasks, as well as track their progress using different status labels.
+Task Tracker is a simple command-line tool built with Python that helps you manage your tasks efficiently. You can add, update, delete, and list tasks, as well as track their progress using different status labels. This is a Python sample solution for the task-tracker challenge from [roadmap.sh.](https://roadmap.sh/projects/task-tracker)
 
 ## 🛠Features
 - Add new tasks with descriptions
